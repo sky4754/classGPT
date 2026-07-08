@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background-color: #f4f6f8;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-box {
+            width: 300px;
+            border: 2px solid black;
+            padding: 30px;
+            background-color: white;
+        }
+
+        .login-title {
+            color: navy;
+        }
+
+        .input-box {
+            width: 100%;
+            height: 35px;
+            margin-bottom: 15px;
+            padding: 8px;
+        }
+
+        .login-button {
+            width: 100%;
+            height: 40px;
+            background-color: navy;
+            color: white;
+            border: 2px solid navy;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .info-text {
+            color: gray;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-box">
+        <h1 class="login-title">
+            로그인
+        </h1>
+
+        <form action="http://127.0.0.1:5501/css/1.html">
+            <p>
+                아이디
+            </p>
+
+            <input
+                class="input-box"
+                type="text"
+                placeholder="아이디를 입력해주세요."
+                required
+            >
+
+            <p>
+                비밀번호
+            </p>
+
+            <input
+                class="input-box"
+                type="password"
+                placeholder="비밀번호를 입력해주세요."
+                required
+            >
+
+            <button class="login-button" type="submit">
+                로그인
+            </button>
+        </form>
+
+        <p class="info-text">
+            회원가입
+        </p>
+    </div>
+</body>
+</html>
